@@ -1,0 +1,256 @@
+/*=== RESET CSS ================================*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*=== VARIABLES ================================*/
+:root {
+  /* colors */
+  --body-color: #121214;
+  --base-color: #14213D;
+  --title-color: #15A8CA;
+  --text-color: #FFFFFF;
+}
+
+/*=== BASE ================================*/
+body {
+  height: 100%;
+  color: var(--text-color);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+}
+
+.section{
+  width: 100vw;
+  height: 100vh;
+  background: #121214;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(270deg, #14213D 0%, rgba(21, 168, 202, 0.34) 100%);
+}
+
+/*==== NAVBAR======================*/
+nav{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 72px;
+ justify-content: space-around;
+ gap: 591px;
+ background: #14213D;
+}
+nav > h1 > a > img{
+  height: 45px;
+}
+
+.menu > ul, .menu > ul > li > a{
+  display: flex;
+  list-style-type: none;
+  color: var(--text-color);
+  gap: 32px;
+}
+
+
+/*==== HOME ================*/
+.left-home{
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textfield-home{
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.textfield-home > h1 {
+  font: 700 6rem 'Poppins', sans-serif;
+  line-height: 1;
+  height: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+}
+
+.logoSpan{
+  color: var(--title-color);
+}
+
+.textfield-home > h2{
+  font: 700 2rem 'Poppins', sans-serif; 
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+}
+
+.textfield-home > p {
+  font: 400 1.25rem 'DM Sans', sans-serif;
+  width: 22rem;
+}
+
+
+.btn-home {
+  padding: 14px 32px 15px;
+  font: 500 2.25rem 'DM Sans', sans-serif;
+  background: #14213D;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.btn-home > a{
+  color: var(--text-color);
+}
+
+.right-home {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-home > img {
+  height: 750px;
+  width: 100%;
+}
+
+/*==== ABOUT ================*/
+.right-about {
+  width: 61vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-about{
+  width: 39vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textfield-about {
+  width: 90%;
+  gap: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+
+.textfield-about > h2 {
+  font: 700 2.25rem 'Poppins', sans-serif; 
+
+}
+.textfield-about > p {
+  line-height: 24px;
+}
+
+.left-about > .image {
+  
+  box-shadow: -20px -20px 0px 5px #14213D;
+}
+
+.image > img {
+  border-radius: 0.25rem;
+}
+
+
+/*==== TEAM================*/
+
+.teamMembers{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  padding-top: 59px;
+}
+
+.teamMembers > h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+
+  padding-bottom: 17px;
+}
+
+.teamMembers > h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+
+  padding-top: 31px;
+}
+
+.coord, .students{
+  padding-top: 42px;
+  display: flex;
+  text-align: center;
+  gap: 50px;
+
+}
+
+.avatar > img {
+  width: 122px;
+  height: 122px;
+
+  border-radius: 10022px;
+
+}
+
+/*==== Projects================*/
+h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding-top: 65px;
+}
+
+
+
+/*==== FOOTER ================*/
+  footer{
+  color: #F9F9F9;
+  background: #14213D;
+  display: flex;
+  justify-content: space-around;
+  gap: 784px;
+}
